@@ -129,16 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTests.cpp" />
-    <ClCompile Include="..\MW_test_task-master\CreateSkin.cpp" />
-    <ClCompile Include="..\MW_test_task-master\Intersection.cpp" />
-    <ClCompile Include="..\MW_test_task-master\WriteFile.cpp" />
     <ClCompile Include="CreateSkin.cpp" />
     <ClCompile Include="cutSphereMove.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
+    <ClCompile Include="MoveSphere.cpp" />
     <ClCompile Include="mwArcFunction.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
@@ -155,20 +152,26 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
     <ClCompile Include="point3dGrid.cpp" />
+    <ClCompile Include="PointCloud.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTestLibrary.h" />
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\LinearAlgebra\Vector.h" />
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\Operations\MathOperations.h" />
-    <ClInclude Include="..\MW_test_task-master\Intersection.hpp" />
-    <ClInclude Include="..\MW_test_task-master\WriteFile.hpp" />
     <ClInclude Include="CreateSkin.hpp" />
+    <ClInclude Include="MoveSphere.hpp" />
     <ClInclude Include="mwArcFunction.hpp" />
     <ClInclude Include="mwDiscreteFunction.hpp" />
     <ClInclude Include="mwException.hpp" />
     <ClInclude Include="mwIdxRangeException.hpp" />
     <ClInclude Include="mwTPoint3d.hpp" />
     <ClInclude Include="point3dGrid.h" />
+    <ClInclude Include="PointCloud.hpp" />
+    <ClInclude Include="Sphere.hpp" />
+    <ClInclude Include="Timer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\Operations\" />
+    <Folder Include="..\MW_test_task-master\" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

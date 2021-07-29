@@ -33,7 +33,7 @@ namespace cadcam
 //#############################################################################
 
 		//!Sets 3d point to origin.
-		inline mwTPoint3d() //constructor
+		inline mwTPoint3d()
 		{
 			elems[0] = 0;
 			elems[1] = 0;
@@ -48,7 +48,7 @@ namespace cadcam
 			\param second constant y-coordinate of the 3d point
 			\param third constant z-coordinate of the 3d point
 		*/
-		inline mwTPoint3d::set3dPointElement( const T &first, const T &second, const T &third ) ///setter
+		inline mwTPoint3d( const T &first, const T &second, const T &third )
 		{
 			elems[0] = first;
 			elems[1] = second;
@@ -61,7 +61,7 @@ namespace cadcam
 		/*!Creates a exact copy of a given 3d point 
 		   \param tc tool to create a copy of
 		*/
-		inline mwTPoint3d::copy3dPointElement( const mwTPoint3d &tc )
+		inline mwTPoint3d( const mwTPoint3d &tc )
 		{
 			elems[0] = tc.elems[0];
 			elems[1] = tc.elems[1];
@@ -74,7 +74,7 @@ namespace cadcam
 		/*!Sets the 3d point to the new position.
 			\param ar const array of the 3d point elements
 		*/
-		inline mwTPoint3d::set3dPoint( const T ar[] )
+		inline mwTPoint3d( const T ar[] )
 		{
 			elems[0] = ar[0];
 			elems[1] = ar[1];
@@ -277,7 +277,7 @@ namespace cadcam
 //#############################################################################
 
 		//!~ operator
-		/*!Returns length of the vector represented by the 3d point
+		/*!Returns length of the vektor represented by the 3d point
 			\returns constant length of the vektor represented by the 3d point.
 		*/
 		inline double operator~() const

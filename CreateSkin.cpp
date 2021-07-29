@@ -1,34 +1,32 @@
-#include "CreateSkin.hpp"
+﻿#include "CreateSkin.hpp"
+#include <iostream>
 #include <fstream>
+#include <list>
+#include "Sphere.hpp"
+#include "PointCloud.hpp"
+#include "MoveSphere.hpp"
 
 
-using namespace std;
-
-void CreateSkin( const cadcam::mwTPoint3d<double> refPoint, 
-				const unsigned long nx, const unsigned long ny, 
-				const unsigned long nz, const double sphereRad, 
-				mwDiscreteFunction &func, const double deltaT, 
-				const double delta, const std::string &skinFileName )
+void CreateSkin(const cadcam::mwTPoint3d<double> refPoint,
+    const unsigned long nx, const unsigned long ny,
+    const unsigned long nz, const double sphereRad,
+    mwDiscreteFunction& func, const double deltaT,
+    const double delta, const std::string& skinFileName)
 {
-	//!Creating array of sphere intermediate positions.
-	
 
-	//loop throuhg 
+    //Your source code here...
 
+    PointCloud _pointCloud(refPoint, nx, ny, nz, delta);
 
-	//!taking two consecutive elements of sphere array, 
-	
+    Sphere _sphere(point3d(9.5, 19.5, 0.), sphereRad);
 
+    MoveSphere _moveSphere(_sphere.GetCenter(), point3d(9.5, 19.5, 19.5), deltaT);
 
-	 
-	//! check if point is inside capusle
-	
+    do
+    {
+        _pointCloud.RemovePoints(_moveSphere.GetCenter(), _sphere.GetRadius());
+    }
+    while ( _moveSphere() );
 
-	
-	//! 
-	//! //write point to output file
-
-
-	
+    _pointCloud.Draw(skinFileName);
 }
-

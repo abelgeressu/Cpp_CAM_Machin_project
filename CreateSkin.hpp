@@ -10,4 +10,6 @@ void CreateSkin( const cadcam::mwTPoint3d<double> refPoint,
 				mwDiscreteFunction &func, const double deltaT, 
 				const double delta, const std::string &skinFileName );
 
+typedef cadcam::mwTPoint3d<double> point3d;
+
 #endif /* CREATESKIN_HPP */
