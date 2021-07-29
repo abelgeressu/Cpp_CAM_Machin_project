@@ -129,11 +129,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTests.cpp" />
     <ClCompile Include="..\MW_test_task-master\CreateSkin.cpp" />
     <ClCompile Include="..\MW_test_task-master\Intersection.cpp" />
-    <ClCompile Include="..\MW_test_task-master\WriteFile.cpp" />
-    <ClCompile Include="CreateSkin.cpp" />
     <ClCompile Include="cutSphereMove.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
@@ -157,11 +154,8 @@
     <ClCompile Include="point3dGrid.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTestLibrary.h" />
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\LinearAlgebra\Vector.h" />
     <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\Operations\MathOperations.h" />
     <ClInclude Include="..\MW_test_task-master\Intersection.hpp" />
-    <ClInclude Include="..\MW_test_task-master\WriteFile.hpp" />
     <ClInclude Include="CreateSkin.hpp" />
     <ClInclude Include="mwArcFunction.hpp" />
     <ClInclude Include="mwDiscreteFunction.hpp" />

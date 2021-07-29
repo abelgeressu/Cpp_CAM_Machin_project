@@ -27,9 +27,6 @@
     <ClCompile Include="mwIdxRangeException.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="CreateSkin.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
     <ClCompile Include="point3dGrid.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
@@ -37,12 +34,6 @@
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
     <ClCompile Include="..\MW_test_task-master\Intersection.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\MW_test_task-master\WriteFile.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTests.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,16 +62,7 @@
     <ClInclude Include="..\MW_test_task-master\Intersection.hpp">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\GeometricTestLibrary.h">
-      <Filter>Quellcodedateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\LinearAlgebra\Vector.h">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
     <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\Operations\MathOperations.h">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\MW_test_task-master\WriteFile.hpp">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
   </ItemGroup>
