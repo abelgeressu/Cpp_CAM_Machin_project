@@ -129,7 +129,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="CreateSkin.cpp" />
+=======
+    <ClCompile Include="..\MW_test_task-master\CreateSkin.cpp" />
+    <ClCompile Include="..\MW_test_task-master\Intersection.cpp" />
+>>>>>>> origin/master
     <ClCompile Include="cutSphereMove.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
@@ -157,6 +162,11 @@
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="..\GeometricTestLibrary-master\Source\GeometricTests\Math\Operations\MathOperations.h" />
+    <ClInclude Include="..\MW_test_task-master\Intersection.hpp" />
+>>>>>>> origin/master
     <ClInclude Include="CreateSkin.hpp" />
     <ClInclude Include="MoveSphere.hpp" />
     <ClInclude Include="mwArcFunction.hpp" />
